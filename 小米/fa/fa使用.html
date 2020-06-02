@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../fa/css/all.css">
+    <style>
+        /* 
+        通过类名使用
+        <i class="fas/fab fa-bell"></i>
+        第一个类名：固定的 fas或者fab
+        第二个类名：图标的类
+         */
+        /* 
+        css中使用
+           content: all.css文件里字体对应的content里的号码
+           font-family: all.css文件里@font-face里对应的值（'Font Awesome 5 Free'/'Font Awesome 5 Brands'）
+           font-weight：要使用的图标字体所属的类下设置的font-weight
+                    fab/far -- font-weight: 400;
+                    fa/fas  -- font-weight: 900;
+           */
+        li{list-style: none;}
+        li::before{
+            content:'\f1b0';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <i class="fas fa-bell"></i>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

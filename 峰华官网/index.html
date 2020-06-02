@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./libs/glide/glide.core.min.css">
+    <link rel="stylesheet" href="./libs/glide/glide.theme.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css"
+    />
+  </head>
+  <body>
+    <header >
+      <!-- 导航栏 -->
+      <div class="logo">峰华科技</div>
+      <nav>
+        <a href="#">首页</a>
+        <a href="#">关于我们</a>
+        <a href="#">成功案例</a>
+        <a href="#">服务流程</a>
+        <a href="#">团队介绍</a>
+        <a href="#">公司动态</a>
+        <i class="fas fa-search"></i>
+      </nav>
+      <!-- 相应式的导航 -->
+      <div class="burger">
+        <div class="burger-line1"></div>
+        <div class="burger-line2"></div>
+        <div class="burger-line3"></div>
+      </div>
+    </header>
+    <!-- 轮播图 -->
+    <div class="glide">
+        <!-- 轮播图文案图片视频 -->
+      <div class="glide__track" data-glide-el="track">
+        <div class="glide__slides">
+          <div class="glide__slide">
+            <div class="slide-caption">
+              <h1>用创新点缀人生，让科技融入理想。</h1>
+              <h3>
+                科技创新大平台，智慧生活新引擎。依靠科技进步推进经济跨越式发展。用创新点缀人生，让科技融入理想
+              </h3>
+              <button class="explore-btn">探索更多</button>
+              
+          </div>
+          <div class="backdrop"></div>
+              <img src="./images/people-in-couch-1024248.jpg" alt="" />
+            </div>
+          <div class="glide__slide">
+            <div class="slide-caption left">
+              <h1>科技改变世界</h1>
+              <h3>
+                科技创新大平台，智慧生活新引擎。依靠科技进步推进经济跨越式发展。用创新点缀人生，让科技融入理想
+              </h3>
+              <button class="explore-btn">探索更多</button>
+              
+          </div>
+          <div class="backdrop"></div>
+              <video src="./videos/working-man.mp4" muted autoplay loop></video>
+            </div>
+        </div>
+      </div>
+      <!-- 轮播图按钮 -->
+      <div class="glid__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir="">
+              >
+        </button>
+      </div>
+      <!-- 控制圆点 -->
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+      </div>
+    </div>
+    <!-- 关于我们 -->
+    <div class="content-wrapper">
+      <section class="about-us">
+        <h2 class="title1">关于我们</h2>
+        <p class="intro">不仅仅提供域名注册，空间租用，网站开发的企业组织</p>
+        <div class="features">
+          <div class="feature">
+            <i class="fas fa-lightbulb"></i>
+            <h4 class="feature-title">品牌创意</h4>
+            <p class="feature-content">为企业设计独特的并能完美呈现企业价值的视觉</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-chart-line"></i>
+            <h4 class="feature-title">整合营销</h4>
+            <p class="feature-content">为企业设计独特的并能完美呈现企业价值的视觉</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-shopping-cart"></i>
+            <h4 class="feature-title">电子商务</h4>
+            <p class="feature-content">为企业设计独特的并能完美呈现企业价值的视觉</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-desktop"></i>
+            <h4 class="feature-title">网页设计</h4>
+            <p class="feature-content">为企业设计独特的并能完美呈现企业价值的视觉</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-tachometer-alt"></i>
+            <h4 class="feature-title">网站优化</h4>
+            <p class="feature-content">为企业设计独特的并能完美呈现企业价值的视觉</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-lightbulb"></i>
+            <h4 class="feature-title">品牌创意</h4>
+            <p class="feature-content">为企业设计独特的并能完美呈现企业价值的视觉</p>
+          </div>
+        </div>
+        
+
+      </section>
+    </div>
+    <!--成功案例  -->
+    <section class="showcases section-bg">
+      <h2>成功案例</h2>
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="*">全部</button>
+        <button class="filter-btn" data-filter=".web">WEB</button>
+        <button class="filter-btn" data-filter=".mobile">移动</button>
+        <button class="filter-btn" data-filter=".science">科研</button>
+      </div>
+      <div class="cases">
+        <div class="case-item web science">
+          <img src="./images/photo-of-imac-near-macbook-1029757.jpg" alt="">
+        </div>
+        <div class="case-item web science">
+          <img src="./images/apple-laptop-notebook-office-39284.jpg" alt="">
+        </div>
+        <div class="case-item web">
+          <img src="./images/apple-apple-device-design-desk-285814.jpg" alt="">
+        </div>
+        <div class="case-item web">
+          <img src="./images/person-using-black-and-white-smartphone-and-holding-blue-230544.jpg" alt="">
+        </div>
+        <div class="case-item mobile">
+          <img src="./images/person-holding-a-smartphone-892757.jpg" alt="">
+        </div>
+        <div class="case-item science">
+          <img src="./images/blur-close-up-code-computer-546819.jpg" alt="">
+        </div>
+        <div class="case-item mobile">
+          <img src="./images/bokeh-photography-of-person-holding-turned-on-iphone-1440727.jpg" alt="">
+        </div>
+        <div class="case-item web science">
+          <img src="./images/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- 数据 -->
+    <section class="data-section">
+      <div class="data-piece">
+        <i class="fas fa-code"></i>
+        <div class="num">156</div>
+        <div class="data-desc">行代码</div>
+      </div>
+      <div class="data-piece">
+        <i class="fas fa-award"></i>
+        <div class="num">288</div>
+        <div class="data-desc">个奖项</div>
+      </div>
+      <div class="data-piece">
+        <i class="fas fa-laugh-wink"></i>
+        <div class="num">1588</div>
+        <div class="data-desc">位客户</div>
+      </div>
+      <div class="data-piece">
+        <i class="fas fa-folder"></i>
+        <div class="num">200</div>
+        <div class="data-desc">个项目</div>
+      </div>
+    </section>
+    
+    <script src="./libs/isotope/isotope.pkgd.min.js"></script>
+    <script src="./libs/anime/anime.min.js"></script>
+    <script src="./libs/glide/glide.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

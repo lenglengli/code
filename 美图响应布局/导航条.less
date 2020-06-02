@@ -1,0 +1,137 @@
+.top-bar-wrapper{
+    background-color: black;
+}
+.top-bar{
+    height: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+a{
+    color: white;
+}
+
+
+.menu{
+    .menu-icon{
+        width: 48px;
+        height: 48px;
+        position: relative;
+        margin-left: 22px;
+        li{
+            width: 18px;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            z-index: 10;
+            transform-origin: left center;
+        }
+        li:nth-child(1){
+            top:18px;
+            transition: transform 0.5s linear 0s;
+        }
+        li:nth-child(2){
+            top: 24px;
+            transition: all 0.1s linear 0.5s;
+        }
+        li:nth-child(3){
+            top:30px;
+            transition: all 0.5s linear 0s;
+        }
+    }
+    .menu-back{
+        background-color: black;
+        position: absolute;
+        top: 48px;
+        height: 0;
+        width: 100%;
+        transition: all 0.2s ease-in 0s;
+    }
+    .menu-nav{
+        position: absolute;
+        top: 90px;
+        left: -260px;
+        transition: all 0.5s linear 0s;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        li{
+            height: 48px;
+            width: 80%;
+            margin: 0 auto;
+            font-size: 16px;
+            color: white;
+            
+            a{
+                
+                line-height: 48px;
+                font-size: 16px;
+                color: rgb(233, 227, 227);
+            }
+        }
+
+    }
+    .menu-icon:hover li:nth-child(1){
+        transform: rotateZ(40deg) ;
+    }
+    .menu-icon:hover li:nth-child(2){
+        opacity: 0;
+    }
+    .menu-icon:hover li:nth-child(3){
+        transform: rotateZ(-40deg) ;
+    }
+    .menu-icon:hover ~ .menu-back{
+        height: 100%;
+    }
+    .menu-icon:hover ~ .menu-nav{
+        left: 60px;
+    }
+}
+.logo a{
+    display: block;
+    background-image: url("img/dff63979.sprites-index@2x.png");
+    width: 122px;
+    height: 32px;
+    background-size: 400px 400px;
+}
+.user{
+    margin-right: 22px ;
+}
+
+
+//分界点768px
+@media only screen{
+    @media (min-width: 768px){
+        .menu{
+            order: 2;
+            flex: auto;
+            .menu-icon{
+                display: none;
+            }
+            .menu-nav{
+                position: static;
+                display: flex;
+                li{
+                    width: auto;
+                    a{
+                        line-height: 48px;
+                    }
+                    span{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .logo{
+            order: 1;
+            margin-left: 24px;
+        }
+        .user{
+            order: 3;
+        }
+    }
+}
